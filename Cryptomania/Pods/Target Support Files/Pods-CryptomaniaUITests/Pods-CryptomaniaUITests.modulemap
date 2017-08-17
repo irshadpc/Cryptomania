@@ -1,0 +1,6 @@
+framework module Pods_CryptomaniaUITests {
+  umbrella header "Pods-CryptomaniaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
