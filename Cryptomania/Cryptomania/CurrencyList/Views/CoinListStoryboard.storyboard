@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gS6-aD-f9k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coin List View Controller-->
+        <scene sceneID="uRf-g2-bwP">
+            <objects>
+                <viewController id="gS6-aD-f9k" customClass="CoinListViewController" customModule="Cryptomania" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eyv-dL-PeI"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHA-aB-Uqc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Fn-5b-ieU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-xB-BT0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Coin" id="Mpo-eT-aLG">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mpo-eT-aLG" id="vxq-Fp-L6l">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gS6-aD-f9k" id="VBI-eV-YdK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jCd-xB-BT0" firstAttribute="top" secondItem="2Fn-5b-ieU" secondAttribute="top" id="BVG-mB-goV"/>
+                            <constraint firstItem="jCd-xB-BT0" firstAttribute="bottom" secondItem="zHA-aB-Uqc" secondAttribute="top" id="E7o-rC-dnx"/>
+                            <constraint firstAttribute="trailing" secondItem="jCd-xB-BT0" secondAttribute="trailing" id="GyK-3t-Zmi"/>
+                            <constraint firstItem="jCd-xB-BT0" firstAttribute="leading" secondItem="2Fn-5b-ieU" secondAttribute="leading" id="hAF-m5-eBD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="jCd-xB-BT0" id="0hY-SK-7bL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4f-TP-k3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-210.04497751124438"/>
+        </scene>
+    </scenes>
+</document>

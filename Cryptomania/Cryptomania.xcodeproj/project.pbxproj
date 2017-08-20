@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043E47C31F474D47008B508F /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E47C21F474D47008B508F /* Coin.swift */; };
+		047DE8E91F49FA0300BE688C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DE8E81F49FA0300BE688C /* NetworkManager.swift */; };
+		047DE8EB1F4A06AB00BE688C /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DE8EA1F4A06AB00BE688C /* CoinViewModel.swift */; };
+		047DE8F21F4A083500BE688C /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DE8F11F4A083500BE688C /* CoinListViewController.swift */; };
+		047DE8F51F4A088100BE688C /* CoinListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DE8F41F4A088100BE688C /* CoinListStoryboard.storyboard */; };
+		047DE8F71F4A0A8C00BE688C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DE8F61F4A0A8C00BE688C /* Main.storyboard */; };
 		049470701F461EFD00CEB71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494706F1F461EFD00CEB71A /* AppDelegate.swift */; };
-		049470721F461EFD00CEB71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049470711F461EFD00CEB71A /* ViewController.swift */; };
-		049470751F461EFD00CEB71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049470731F461EFD00CEB71A /* Main.storyboard */; };
 		049470781F461EFD00CEB71A /* Cryptomania.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 049470761F461EFD00CEB71A /* Cryptomania.xcdatamodeld */; };
 		0494707A1F461EFD00CEB71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049470791F461EFD00CEB71A /* Assets.xcassets */; };
 		0494707D1F461EFD00CEB71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0494707B1F461EFD00CEB71A /* LaunchScreen.storyboard */; };
@@ -38,11 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043E47C21F474D47008B508F /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coin.swift; path = CurrencyList/Coin.swift; sourceTree = "<group>"; };
 		046359EC3F03C3210E863E4C /* Pods-Cryptomania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptomania.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptomania/Pods-Cryptomania.release.xcconfig"; sourceTree = "<group>"; };
+		047DE8E81F49FA0300BE688C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Network/NetworkManager.swift; sourceTree = "<group>"; };
+		047DE8EA1F4A06AB00BE688C /* CoinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinViewModel.swift; path = CurrencyList/CoinViewModel.swift; sourceTree = "<group>"; };
+		047DE8F11F4A083500BE688C /* CoinListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinListViewController.swift; path = CurrencyList/Controllers/CoinListViewController.swift; sourceTree = "<group>"; };
+		047DE8F41F4A088100BE688C /* CoinListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CoinListStoryboard.storyboard; path = CurrencyList/Views/CoinListStoryboard.storyboard; sourceTree = "<group>"; };
+		047DE8F61F4A0A8C00BE688C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0494706C1F461EFD00CEB71A /* Cryptomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494706F1F461EFD00CEB71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		049470711F461EFD00CEB71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		049470741F461EFD00CEB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		049470771F461EFD00CEB71A /* Cryptomania.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cryptomania.xcdatamodel; sourceTree = "<group>"; };
 		049470791F461EFD00CEB71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0494707C1F461EFD00CEB71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +99,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043E47BF1F474BA7008B508F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				049470791F461EFD00CEB71A /* Assets.xcassets */,
+				0494707B1F461EFD00CEB71A /* LaunchScreen.storyboard */,
+				0494707E1F461EFD00CEB71A /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		043E47C11F474CCF008B508F /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				047DE8F31F4A085600BE688C /* Views */,
+				047DE8EC1F4A07AF00BE688C /* Controllers */,
+				043E47C21F474D47008B508F /* Coin.swift */,
+				047DE8EA1F4A06AB00BE688C /* CoinViewModel.swift */,
+			);
+			name = CurrencyList;
+			sourceTree = "<group>";
+		};
+		047DE8E71F49F96B00BE688C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				047DE8E81F49FA0300BE688C /* NetworkManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		047DE8EC1F4A07AF00BE688C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				047DE8F11F4A083500BE688C /* CoinListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		047DE8F31F4A085600BE688C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				047DE8F41F4A088100BE688C /* CoinListStoryboard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		049470631F461EFD00CEB71A = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +169,12 @@
 		0494706E1F461EFD00CEB71A /* Cryptomania */ = {
 			isa = PBXGroup;
 			children = (
+				047DE8E71F49F96B00BE688C /* Network */,
+				043E47C11F474CCF008B508F /* CurrencyList */,
 				0494706F1F461EFD00CEB71A /* AppDelegate.swift */,
-				049470711F461EFD00CEB71A /* ViewController.swift */,
-				049470731F461EFD00CEB71A /* Main.storyboard */,
-				049470791F461EFD00CEB71A /* Assets.xcassets */,
-				0494707B1F461EFD00CEB71A /* LaunchScreen.storyboard */,
-				0494707E1F461EFD00CEB71A /* Info.plist */,
 				049470761F461EFD00CEB71A /* Cryptomania.xcdatamodeld */,
+				043E47BF1F474BA7008B508F /* SupportingFiles */,
+				047DE8F61F4A0A8C00BE688C /* Main.storyboard */,
 			);
 			path = Cryptomania;
 			sourceTree = "<group>";
@@ -289,7 +341,8 @@
 			files = (
 				0494707D1F461EFD00CEB71A /* LaunchScreen.storyboard in Resources */,
 				0494707A1F461EFD00CEB71A /* Assets.xcassets in Resources */,
-				049470751F461EFD00CEB71A /* Main.storyboard in Resources */,
+				047DE8F51F4A088100BE688C /* CoinListStoryboard.storyboard in Resources */,
+				047DE8F71F4A0A8C00BE688C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +505,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049470721F461EFD00CEB71A /* ViewController.swift in Sources */,
+				047DE8EB1F4A06AB00BE688C /* CoinViewModel.swift in Sources */,
+				047DE8E91F49FA0300BE688C /* NetworkManager.swift in Sources */,
+				043E47C31F474D47008B508F /* Coin.swift in Sources */,
+				047DE8F21F4A083500BE688C /* CoinListViewController.swift in Sources */,
 				049470701F461EFD00CEB71A /* AppDelegate.swift in Sources */,
 				049470781F461EFD00CEB71A /* Cryptomania.xcdatamodeld in Sources */,
 			);
@@ -490,14 +546,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		049470731F461EFD00CEB71A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				049470741F461EFD00CEB71A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0494707B1F461EFD00CEB71A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -713,6 +761,7 @@
 				049470991F461EFD00CEB71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0494709A1F461EFD00CEB71A /* Build configuration list for PBXNativeTarget "CryptomaniaTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +770,7 @@
 				0494709C1F461EFD00CEB71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0494709D1F461EFD00CEB71A /* Build configuration list for PBXNativeTarget "CryptomaniaUITests" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +779,7 @@
 				0494709F1F461EFD00CEB71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
